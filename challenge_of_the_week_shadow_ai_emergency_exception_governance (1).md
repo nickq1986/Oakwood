@@ -1,86 +1,51 @@
-# 🛠️ Challenge of the Week: Shadow AI & Emergency Exception Governance
+# 🛡️ Emergency AI Exception & Shadow AI Governance Framework
 
-You are in your second month at **Oakwood Care Group**, a fictional mid-sized British social care provider operating 35 residential and nursing care homes across the UK. Oakwood manages sensitive adult social care records, staff rosters, and personal health data (regulated under UK GDPR, Data Protection Act 2018, and Care Quality Commission [CQC] standards). 
-
-This week’s scenario tests your ability to navigate governance, risk, and compliance (GRC) when strict security controls clash with urgent operational deadlines.
+> **An ISO/IEC 27001:2022 Aligned Operational Framework for Managing Unsanctioned AI Use Under Critical Business Deadlines.**
 
 ---
 
-## How it works
+## 📌 Executive Summary
 
-1. **Do the work.** Everything you need is in this document. No lab required.
-2. **Submit by Saturday, 11:59 PM GMT** as a reply in that challenge's thread, using the submission format at the bottom.
-3. **Review two other submissions** by Sunday, scoring them against the rubric with one sentence of feedback each.
-4. **Compare against my model answer**, posted on Sunday Evening.
+Modern delivery teams frequently hit gaps where enterprise-approved AI tools lack necessary capabilities. When faced with hard business deadlines, teams often turn to non-sanctioned, personal AI accounts ("Shadow AI"). 
 
-### How every challenge is scored (1–5 each)
-* **Accuracy:** Did you address the real regulatory, data protection, and operational risks?
-* **Reasoning:** Did you explain *why* your approach balances data protection with service continuity?
-* **Communication:** Could a busy manager understand your solution in 60 seconds?
+Traditional security responses—issuing a total "stop work" order—protect compliance on paper but inflict severe business damage. Conversely, allowing unmonitored shadow IT exposes organizational data to leaks, intellectual property loss, and regulatory non-compliance.
 
-> *Oakwood Care Group, its homes, domains, and systems are fictional and used for training only.*
+This repository presents a **Pragmatic Governance Framework** that balances **business velocity** with **information security controls**. It provides a structured, 1-hour triage workflow to handle emergency AI exceptions safely without missing deadlines.
 
 ---
 
-## 🎟️ Ticket from your manager
+## 🎯 Case Study Scenario
 
-> "We’ve got a major issue on our hands. InfoSec just caught the Quality & Compliance team using a personal, free-tier ChatGPT account on a personal laptop to summarize draft CQC inspection reports and care plan auditing templates. 
-> 
-> Our approved corporate AI tool, `Oakwood-Assist`, keeps hitting token limits and crashing on long documents. The care home manager knew they were using personal accounts because the deadline for the CQC response hasn't moved, and a late filing risks an official warning letter. Security wants to issue an immediate 'stop work' order. If we do that, we miss the deadline. 
-> 
-> I need an action plan for tomorrow morning that gives us a workable alternative, defines who can approve an emergency exception, and sets a strict review schedule—'just stop' leaves half the business problem unsolved."
+* **The Problem:** An approved enterprise AI tool fails to perform a required technical task. The team pivots to a free-tier personal account to meet an unmovable project deadline.
+* **The Escalation:** Line management is aware and supportive; Information Security discovers the policy breach halfway through execution.
+* **The Goal:** Provide a compliant "Tomorrow Morning" protocol that triage data sensitivity, applies compensating controls, grants temporary risk-based approval, and mandates post-deadline remediation.
 
 ---
 
-## 📋 The Scenario Details
+## 📐 ISO/IEC 27001:2022 Standard Mapping
 
-* **The Problem:** The enterprise-approved tool (`Oakwood-Assist`) cannot handle large document uploads due to token processing limits.
-* **The Violation:** Staff used a personal account to upload unredacted draft care plan reviews containing resident names, care notes, and local authority details (posing a UK GDPR / Special Category Data exposure risk).
-* **The Discovery:** Information Security discovered the traffic log during a routine network audit halfway through the CQC filing window.
-* **Current Policy State:** The current Information Governance policy states: *"The use of unapproved software or personal accounts for company business is strictly prohibited."* It contains no fast-track emergency exception pathway when core tools fail.
+This framework directly operationalizes key requirements of the ISO 27001 management system:
 
----
-
-## 🎯 Your Deliverables
-
-1. **Immediate Triage & Containment Plan (Tomorrow Morning):**
-   * Outline the exact 9:00 AM steps for Information Governance and operations to contain the data risk while keeping the CQC filing on track.
-2. **Risk & Impact Assessment:**
-   * Compare the UK GDPR data exposure risk against the regulatory risk of a missed CQC filing, explaining which takes priority and why.
-3. **Policy Exception & Governance Framework:**
-   * Draft the core requirements for a new policy mechanism, specifying:
-     * A **Workable Alternative Pathway** when corporate tools fail.
-     * An **Approval Authority Matrix** (who can sign off emergency exceptions).
-     * A **Review Cadence** for expiring temporary approvals.
-4. **Message to the Care Home Regional Manager:**
-   * A short email (150 words maximum) explaining what needs to happen next, written in plain, non-punitive language.
+| ISO 27001 Reference | Clause / Control Name | How This Framework Fulfills It |
+| :--- | :--- | :--- |
+| **Clause 8.3** | Information Security Risk Treatment | Executes formal, risk-assessed temporary risk acceptance workflows. |
+| **Control 5.10** | Acceptable Use of Information & Assets | Establishes boundary conditions and permitted emergency pathways. |
+| **Control 5.24** | Information Security Incident Management | Logs policy bypasses as security incidents requiring root-cause analysis. |
+| **Control 5.23** | Information Security for Cloud Services | Assesses data ingestion risks for unvetted third-party AI services. |
 
 ---
 
-### 🌟 Bonus Point
-Explain why a simple "stop using it" order fails operationally in a care setting, and what compensatory control you can put in place tomorrow morning to salvage the work already generated.
-
----
-
-## 📮 Submission Format
-
-Please structure your submission as follows:
+## 📂 Repository Architecture
 
 ```text
-1. Immediate Triage & Containment Plan
-[Your answer]
-
-2. Risk & Impact Assessment
-[Your answer]
-
-3. Policy Exception & Governance Framework
-- Alternative Pathway:
-- Approval Authority Matrix:
-- Review Cadence:
-
-4. Message to Regional Manager
-[Your 150-word email]
-
-Bonus Point (Optional)
-[Your answer]
-```
+.
+├── README.md                           # Framework overview, mapping, and setup
+├── policies/
+│   └── Emergency_AI_Exception_Policy.md # Core governance policy draft
+├── procedures/
+│   └── Incident_Triage_SOP.md          # Step-by-step 1-hour triage workflow ("Tomorrow Morning")
+├── forms/
+│   ├── Emergency_Exception_Request.md  # Exception logging & sign-off form
+│   └── Risk_Assessment_Worksheet.md   # Data classification and risk evaluation worksheet
+└── examples/
+    └── Simulated_Case_Study.md         # Full walkthrough of a resolved Shadow AI incident
